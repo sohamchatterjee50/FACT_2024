@@ -14,9 +14,10 @@ rc('font', **{'family': 'serif', 'serif': ['Bookman']})
 
 from mcr.experiment.compile import compile_experiments
 
-scm_names = {'3var-causal': '3var-c-collected', '3var-noncausal': '3var-nc-collected',
-             '7var-covid': '7var-covid-collected',
-             '5var-skill': '5var-skill-collected'
+scm_names = {'3var-causal': '3var-c', '3var-noncausal': '3var-nc',
+              '5var-skill': '5var-skill',
+             '7var-covid': '7var-covid',
+            
              }
 levels = ['gam0.75_', 'gam0.85_', 'gam0.9_', 'gam0.95_']
 
@@ -35,6 +36,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     basepath = args.savepath
+    
 
     for scm_name in scm_names.keys():
         loadpath = basepath + scm_names[scm_name] + '/'

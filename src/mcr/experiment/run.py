@@ -86,6 +86,8 @@ def run_experiment(scm_name, N, N_recourse, gamma, thresh, lbd, savepath, use_sc
                      'model_type': model_type,
                      }
 
+    if not os.path.exists(savepath):
+        os.makedirs(savepath)
     # problem setup
     with open(savepath + 'problem_setup.json', 'w') as f:
         json.dump(problem_setup, f)
