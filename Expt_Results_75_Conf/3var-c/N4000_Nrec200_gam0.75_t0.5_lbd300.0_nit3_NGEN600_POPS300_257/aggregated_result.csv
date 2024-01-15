@@ -1,0 +1,3 @@
+r_type,t_type,eta_mean,gamma_mean,perc_recomm_found_mean,eta_obs_mean,eta_obs_individualized_mean,eta_obs_refits_batch0_mean_mean,gamma_obs_mean,intv-cost_mean,eta_std,gamma_std,perc_recomm_found_std,eta_obs_std,eta_obs_individualized_std,eta_obs_refits_batch0_mean_std,gamma_obs_std,intv-cost_std
+individualized,acceptance,0.75,0.75,1.0,1.0,,0.5130000114440918,0.4050000011920929,,,,,,,,,
+individualized,improvement,0.75,0.75,1.0,1.0,1.0,0.9979999661445618,0.7599999904632568,2.3684999999999996,,,,,,,,

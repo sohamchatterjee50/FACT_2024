@@ -1,0 +1,69 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius+and+Lisa#SoftwarepolicySnelliusandLisa-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+GPU available? True
+No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726_854
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726_854_638
+WARNING:root:Creating of directory /home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726_854_638 failed
+INFO:root:Storing all relevant data...
+INFO:root:Run all types of recourse...
+INFO:root:results for up to 0 runs found
+INFO:root:
+INFO:root:
+INFO:root:-------------
+INFO:root:ITERATION 0
+INFO:root:-------------
+INFO:root:Creating 2 batches of data with 2000 observations
+INFO:root:Split the data into 2 batches
+INFO:root:Fitting model (type rf)...
+INFO:root:fitting model with the specified parameters
+INFO:root:model fit with accuracy 0.9985
+INFO:root:f1-score 0.9987898346107302
+INFO:root:assessing how many recourse contenders
+INFO:root:enough recourse contendors. continue.
+INFO:root:create folder to starte results
+INFO:root:Fitting 5 models for multiplicity robustness assessment.
+INFO:root:
+INFO:root:combination: individualized improvement
+/home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500
+/home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530
+/home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805
+/home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726
+/home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726_854
+/home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726_854_638
+[Errno 2] No such file or directory: '/home/scur1004/ICR/Expt_Results_75_Conf/5var-skill/N4000_Nrec200_gam0.75_t0.5_lbd300.0_nit3_NGEN1000_POPS500_530_805_726_854_638'
+  0%|          | 0/200 [00:00<?, ?it/s]  0%|          | 1/200 [00:21<1:12:15, 21.79s/it]  1%|          | 2/200 [00:42<1:08:54, 20.88s/it]  2%|▏         | 3/200 [01:02<1:07:53, 20.68s/it]  2%|▏         | 4/200 [01:22<1:06:43, 20.43s/it]  2%|▎         | 5/200 [01:42<1:06:08, 20.35s/it]  3%|▎         | 6/200 [02:02<1:05:39, 20.31s/it]  4%|▎         | 7/200 [02:23<1:05:10, 20.26s/it]  4%|▍         | 8/200 [02:43<1:04:40, 20.21s/it]  4%|▍         | 9/200 [03:03<1:04:17, 20.19s/it]  5%|▌         | 10/200 [03:23<1:03:49, 20.16s/it]  6%|▌         | 11/200 [03:43<1:03:24, 20.13s/it]  6%|▌         | 12/200 [04:03<1:03:04, 20.13s/it]  6%|▋         | 13/200 [04:23<1:02:52, 20.17s/it]  7%|▋         | 14/200 [04:44<1:02:35, 20.19s/it]  8%|▊         | 15/200 [05:04<1:02:17, 20.20s/it]  8%|▊         | 16/200 [05:24<1:02:05, 20.25s/it]  8%|▊         | 17/200 [05:44<1:01:41, 20.23s/it]  9%|▉         | 18/200 [06:04<1:01:12, 20.18s/it] 10%|▉         | 19/200 [06:25<1:00:43, 20.13s/it] 10%|█         | 20/200 [06:45<1:00:24, 20.13s/it] 10%|█         | 21/200 [07:05<1:00:09, 20.16s/it] 11%|█         | 22/200 [07:25<59:51, 20.18s/it]   12%|█▏        | 23/200 [07:45<59:37, 20.21s/it] 12%|█▏        | 24/200 [08:06<59:17, 20.21s/it] 12%|█▎        | 25/200 [08:26<58:48, 20.16s/it] 13%|█▎        | 26/200 [08:46<58:35, 20.21s/it] 14%|█▎        | 27/200 [09:06<58:17, 20.22s/it] 14%|█▍        | 28/200 [09:26<57:50, 20.18s/it] 14%|█▍        | 29/200 [09:47<57:35, 20.21s/it] 15%|█▌        | 30/200 [10:07<57:13, 20.20s/it] 16%|█▌        | 31/200 [10:27<57:00, 20.24s/it] 16%|█▌        | 32/200 [10:47<56:41, 20.25s/it] 16%|█▋        | 33/200 [11:07<56:11, 20.19s/it] 17%|█▋        | 34/200 [11:27<55:43, 20.14s/it] 18%|█▊        | 35/200 [11:47<55:18, 20.11s/it] 18%|█▊        | 36/200 [12:08<55:03, 20.14s/it] 18%|█▊        | 37/200 [12:28<54:34, 20.09s/it] 19%|█▉        | 38/200 [12:48<54:11, 20.07s/it] 20%|�slurmstepd: error: *** JOB 4861722 ON gcn5 CANCELLED AT 2024-01-14T19:55:34 DUE TO TIME LIMIT ***
+��▉        | 39/200 [13:08<54:07, 20.17s/it] 20%|██        | 40/200 [13:28<53:56, 20.23s/it] 20%|██        | 41/200 [13:48<53:28, 20.18s/it] 21%|██        | 42/200 [14:09<53:04, 20.16s/it] 22%|██▏       | 43/200 [14:29<52:51, 20.20s/it] 22%|██▏       | 44/200 [14:49<52:26, 20.17s/it]slurmstepd: error: *** STEP 4861722.1 ON gcn5 CANCELLED AT 2024-01-14T19:55:34 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: container_p_join: setns failed for /slurm/4861722/.ns: Invalid argument
+slurmstepd: error: container_g_join(4861722): Invalid argument
+
+JOB STATISTICS
+==============
+Job ID: 4861722
+Cluster: snellius
+User/Group: scur1004/scur1004
+State: TIMEOUT (exit code 0)
+Nodes: 1
+Cores per node: 9
+CPU Utilized: 00:00:03
+CPU Efficiency: 0.04% of 02:18:09 core-walltime
+Job Wall-clock time: 00:15:21
+Memory Utilized: 7.50 MB
+Memory Efficiency: 0.02% of 31.25 GB

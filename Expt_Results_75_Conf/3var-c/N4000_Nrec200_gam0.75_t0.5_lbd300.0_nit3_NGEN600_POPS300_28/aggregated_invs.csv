@@ -1,0 +1,4 @@
+r_type,t_type,x1_mean,x2_mean,x3_mean,causes_mean,non-causes_mean,x1_std,x2_std,x3_std,causes_std,non-causes_std
+individualized,acceptance,0.37750000000000017,0.4519999999999998,1.831000000000001,2.660500000000001,0.0,,,,,
+individualized,counterfactual,0.20100000000000012,0.5199999999999999,2.5965,3.3175,0.0,,,,,
+individualized,improvement,1.0145000000000002,1.054,1.6309999999999996,3.6994999999999996,0.0,,,,,

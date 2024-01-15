@@ -1,0 +1,11 @@
+r_type,t_type,eta_mean,gamma_mean,perc_recomm_found_mean,eta_obs_mean,eta_obs_individualized_mean,eta_obs_refits_batch0_mean_mean,gamma_obs_mean,intv-cost_mean,eta_std,gamma_std,perc_recomm_found_std,eta_obs_std,eta_obs_individualized_std,eta_obs_refits_batch0_mean_std,gamma_obs_std,intv-cost_std
+individualized,acceptance,0.75,0.75,1.0,1.0,,0.6669999957084656,0.2199999988079071,,,,,,,,,
+individualized,acceptance,0.75,0.75,1.0,0.995,,0.5960000157356262,0.23000000417232513,2.1245,,,,,,,,
+individualized,acceptance,0.75,0.75,1.0,0.99,,0.7360000014305115,0.26499998569488525,2.0515000000000008,,,,,,,,
+individualized,counterfactual,0.75,0.75,1.0,0.995,,0.527999997138977,0.20000000298023224,2.1814999999999998,,,,,,,,
+individualized,counterfactual,0.75,0.75,1.0,0.98,,0.6899999976158142,0.20499999821186066,2.083500000000001,,,,,,,,
+individualized,improvement,0.75,0.75,1.0,0.94,0.755,0.9380000233650208,0.7649999856948853,2.1035000000000004,,,,,,,,
+individualized,improvement,0.75,0.75,1.0,0.88,0.76,0.8729999661445618,0.7400000095367432,2.0030000000000006,,,,,,,,
+individualized,improvement,0.75,0.75,1.0,0.955,0.82,0.9569999575614929,0.7599999904632568,1.8839999999999997,,,,,,,,
+subpopulation,improvement,0.75,0.75,1.0,0.76,,0.7509999871253967,0.6800000071525574,1.764,,,,,,,,
+subpopulation,improvement,0.75,0.75,1.0,0.83,,0.824999988079071,0.7450000047683716,1.9334999999999993,,,,,,,,

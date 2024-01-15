@@ -1,0 +1,139 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius+and+Lisa#SoftwarepolicySnelliusandLisa-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+GPU available? True
+No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585_166
+WARNING:root:Could not generate folder.../home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585_166_176
+WARNING:root:Creating of directory /home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585_166_176 failed
+INFO:root:Storing all relevant data...
+INFO:root:Run all types of recourse...
+INFO:root:results for up to 0 runs found
+INFO:root:
+INFO:root:
+INFO:root:-------------
+INFO:root:ITERATION 0
+INFO:root:-------------
+/home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300
+/home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847
+/home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580
+/home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585
+/home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585_166
+/home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585_166_176
+[Errno 2] No such file or directory: '/home/scur1004/ICR/Expt_Results_75_Conf/7var-covid/N20000_Nrec200_gam0.75_t0.5_lbd2999.0_nit3_NGEN700_POPS300_847_580_585_166_176'
+Traceback (most recent call last):
+  File "/gpfs/home5/scur1004/ICR/icr/scripts/run_experiments.py", line 97, in <module>
+    run_experiment(args.scm_name, args.N, args.N_recourse, args.gamma, args.thresh, args.lbd, savepath_config,
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/experiment/run.py", line 149, in run_experiment
+    df = scm.compute()
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/scm.py", line 333, in compute
+    self.model[node]['values'] = self.compute_node(node).reshape(-1)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/generic.py", line 110, in compute_node
+    vals = self.model[node]['fnc'](par_values, noise_values)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/functions.py", line 24, in __call__
+    return self.fnc(*args, **kwargs)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/examples.py", line 135, in <lambda>
+    fn_fever = lambda x, u: jnp.greater_equal(fn_fever_raw(x), u)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/examples.py", line 134, in <lambda>
+    fn_fever_raw = lambda x: jax.nn.sigmoid(+ 6 - 9 * x[..., 0])
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/traceback_util.py", line 166, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/pjit.py", line 235, in cache_miss
+    outs, out_flat, out_tree, args_flat = _python_pjit_helper(
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/pjit.py", line 179, in _python_pjit_helper
+    args_flat, _, params, in_tree, out_tree, _ = infer_params_fn(
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/api.py", line 442, in infer_params
+    return pjit.common_infer_params(pjit_info_args, *args, **kwargs)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/pjit.py", line 515, in common_infer_params
+    jaxpr, consts, canonicalized_out_shardings_flat = _pjit_jaxpr(
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/pjit.py", line 967, in _pjit_jaxpr
+    jaxpr, final_consts, global_out_avals = _create_pjit_jaxpr(
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/linear_util.py", line 301, in memoized_fun
+    ans = call(fun, *args)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/pjit.py", line 925, in _create_pjit_jaxpr
+    jaxpr, global_out_avals, consts = pe.trace_to_jaxpr_dynamic(
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/profiler.py", line 314, in wrapper
+    return func(*args, **kwargs)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/interpreters/partial_eval.py", line 2029, in trace_to_jaxpr_dynamic
+    jaxpr, out_avals, consts = trace_to_subjaxpr_dynamic(
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/interpreters/partial_eval.py", line 2046, in trace_to_subjaxpr_dynamic
+    ans = fun.call_wrapped(*in_tracers_)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/linear_util.py", line 165, in call_wrapped
+    ans = self.f(*args, **dict(self.params, **kwargs))
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/nn/functions.py", line 103, in sigmoid
+    return lax.logistic(x)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/lax/lax.py", line 314, in logistic
+    return logistic_p.bind(x)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/core.py", line 360, in bind
+    return self.bind_with_trace(find_top_trace(args), args, params)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/core.py", line 363, in bind_with_trace
+    out = trace.process_primitive(self, map(trace.full_raise, args), params)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/interpreters/partial_eval.py", line 1781, in process_primitive
+    return self.default_process_primitive(primitive, tracers, params)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/interpreters/partial_eval.py", line 1785, in default_process_primitive
+    out_avals, effects = primitive.abstract_eval(*avals, **params)
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/core.py", line 396, in abstract_eval_
+    return abstract_eval(*args, **kwargs), no_effects
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/lax/utils.py", line 67, in standard_abstract_eval
+    dtype_rule(*avals, **kwargs), weak_type=weak_type,
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/lax/lax.py", line 1557, in unop_dtype_rule
+    raise TypeError(msg.format(name, typename, ', '.join(accepted_typenames)))
+jax._src.traceback_util.UnfilteredStackTrace: TypeError: logistic does not accept dtype int32. Accepted dtypes are subtypes of floating, complexfloating.
+
+The stack trace below excludes JAX-internal frames.
+The preceding is the original exception that occurred, unmodified.
+
+--------------------
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/home5/scur1004/ICR/icr/scripts/run_experiments.py", line 97, in <module>
+    run_experiment(args.scm_name, args.N, args.N_recourse, args.gamma, args.thresh, args.lbd, savepath_config,
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/experiment/run.py", line 149, in run_experiment
+    df = scm.compute()
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/scm.py", line 333, in compute
+    self.model[node]['values'] = self.compute_node(node).reshape(-1)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/generic.py", line 110, in compute_node
+    vals = self.model[node]['fnc'](par_values, noise_values)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/functions.py", line 24, in __call__
+    return self.fnc(*args, **kwargs)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/examples.py", line 135, in <lambda>
+    fn_fever = lambda x, u: jnp.greater_equal(fn_fever_raw(x), u)
+  File "/gpfs/home5/scur1004/ICR/icr/src/mcr/causality/scms/examples.py", line 134, in <lambda>
+    fn_fever_raw = lambda x: jax.nn.sigmoid(+ 6 - 9 * x[..., 0])
+  File "/home/scur1004/.local/lib/python3.9/site-packages/jax/_src/nn/functions.py", line 103, in sigmoid
+    return lax.logistic(x)
+TypeError: logistic does not accept dtype int32. Accepted dtypes are subtypes of floating, complexfloating.
+srun: error: gcn2: task 0: Exited with exit code 1
+srun: Terminating StepId=4861728.1
+
+JOB STATISTICS
+==============
+Job ID: 4861728
+Cluster: snellius
+User/Group: scur1004/scur1004
+State: RUNNING
+Nodes: 1
+Cores per node: 9
+CPU Utilized: 00:00:03
+CPU Efficiency: 1.96% of 00:02:33 core-walltime
+Job Wall-clock time: 00:00:17
+Memory Utilized: 1.31 MB
+Memory Efficiency: 0.00% of 31.25 GB
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
