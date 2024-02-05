@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_mig
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=9
+#SBATCH --gpus=1
+#SBATCH --job-name=ICR
+#SBATCH --ntasks=1
+#SBATCH --time=72:00:00
+#SBATCH --mem=32000M
+#SBATCH --output=Results_Synthetic.out
+
+module purge
+module load 2022
+module load Anaconda3/2022.05
+
+cd  /home/scur1004/Results/Extension_ICR/Synthetic_Dataset/icr
+
+srun python 'scripts/run_experiments.py' '5var-synthetic' 4000 200 0.75 300 '/home/scur1004/Results/Extension_ICR/Synthetic_Dataset/Synthetic_Dataset_Results/5var-synthetic/' 3 --NGEN 600 --POP_SIZE 300 --n_digits 1 --nr_refits 5 --predict_individualized True --thresh 0.5

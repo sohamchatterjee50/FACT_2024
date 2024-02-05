@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_mig
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=9
+#SBATCH --gpus=1
+#SBATCH --job-name=ICR
+#SBATCH --ntasks=1
+#SBATCH --time=00:12:00
+#SBATCH --mem=32000M
+#SBATCH --output=Results_Plots.out
+
+module purge
+module load 2022
+module load Anaconda3/2022.05
+
+
+
+cd /home/scur1004/Results/Reproducibility_ICR/icr
+
+srun python scripts/plots.py --savepath '/home/scur1004/Results/Reproducibility_ICR/Reproducibility_Results/'

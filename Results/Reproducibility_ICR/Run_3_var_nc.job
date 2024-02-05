@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_mig
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=9
+#SBATCH --gpus=1
+#SBATCH --job-name=ICR
+#SBATCH --ntasks=1
+#SBATCH --time=48:00:00
+#SBATCH --mem=32000M
+#SBATCH --output=Results_Conf_75_3var_nc.out
+
+module purge
+module load 2022
+module load Anaconda3/2022.05
+
+
+
+cd /home/scur1004/Results/Reproducibility_ICR/icr
+
+srun python 'scripts/run_experiments.py' '3var-noncausal' 4000 200 0.75 300 '/home/scur1004/Results/Reproducibility_ICR/Reproducibility_Results/3var-nc/' 3 --NGEN 600 --POP_SIZE 300 --n_digits 1 --nr_refits 5 --predict_individualized True

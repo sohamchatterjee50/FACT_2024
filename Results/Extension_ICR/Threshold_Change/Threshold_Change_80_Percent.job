@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_mig
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=9
+#SBATCH --gpus=1
+#SBATCH --job-name=ICR
+#SBATCH --ntasks=1
+#SBATCH --time=48:00:00
+#SBATCH --mem=32000M
+#SBATCH --output=Results_Treshold_80.out
+
+module purge
+module load 2022
+module load Anaconda3/2022.05
+
+cd  /home/scur1004/Results/Extension_ICR/Threshold_Change/icr
+
+srun python 'scripts/run_experiments.py' '7var-covid' 20000 200 0.9 2999 '/home/scur1004/Results/Extension_ICR/Threshold_Change/Threshold_Change_Results/7var-covid/' 3 --NGEN 700 --POP_SIZE 300 --n_digits 1 --nr_refits 5 --predict_individualized True --model_type rf --thresh 0.8
