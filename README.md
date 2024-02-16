@@ -59,3 +59,10 @@ In the ``[savepath]`` folder, for each scm you can then find two files called
 - ``invs_resultss.csv``: overview of interventions performed for each of the variables as well as aggregated for causes and non-causal variables
 
 Furthermore you find summary plots and text files that were used to produce the latex tables in the Appendix of the paper.
+
+
+
+NOTE :
+Open the Results folder,  under this path there are two different folders : "Extension_ICR" & "Reproducibility_ICR", which comprise of the code and results for the extensions and the reproducibility experiment respective.
+
+The "Instructions_Reproducibility.txt", contains the information on how you can reproduce the results and how you can read the obtained results. Similarly inside the "Extension_ICR"  folder we have a folder called "Readme Files" which contains information for the various extended results that we have obtained.
